@@ -489,7 +489,7 @@ class RequestOptions extends _RequestConfig with OptionsMixin {
   }) {
     var contentTypeInHeader = headers != null &&
         headers.keys
-            .map((e) => e.toLowerCase())
+            .map((e) => e)
             .contains(Headers.contentTypeHeader);
 
     assert(
